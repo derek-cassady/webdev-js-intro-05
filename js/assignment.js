@@ -9,7 +9,7 @@ const todos = [
 ];
 
 // Declare your two immutable variables
-
+let shiftValue;
 
 // Declaring constant variables to store references to the elements
 // that will be updated by your code.
