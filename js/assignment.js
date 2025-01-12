@@ -23,43 +23,51 @@ const answerSixEl = document.getElementById("answer-six");
 const submissionBtn = document.getElementById("submission-btn");
 
 function updateAnswerOne() {
-    
+    answerOneEl.textContent = todos.join(", ");
 }
 
 function updateAnswerTwo() {
-
+    answerTwoEl.textContent = todos[2];
 }
 
 function removeLastValue() {
-
+    popValue = todos.pop();
 }
 
 function removeFirstValue() {
-
+    answerFourEl.textContent = todos.join(", ");
 }
 
 function addShiftAndPopValues() {
-
+    todos.reverse();
 }
 
 function updateAnswerFour() {
-
+    answerFiveEl.textContent = todos.join(", ");
 }
 
 function reverseTodoList() {
-
+    shiftValue = todos.shift();
 }
 
 function updateAnswerFive() {
-
+    todos.push(shiftValue, popValue);
 }
 
 function updateAnswerSix() {
-
+    answerSixEl.textContent = todos.join(", ");
 }
 
 function render() {
-
+    updateAnswerOne();
+    updateAnswerTwo();
+    removeLastValue();
+    updateAnswerFour();
+    reverseTodoList();
+    updateAnswerFive();
+    removeFirstValue();
+    addShiftAndPopValues();
+    updateAnswerSix();
 }
 
 submissionBtn.addEventListener("click", function () {
