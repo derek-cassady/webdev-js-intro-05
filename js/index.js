@@ -13,9 +13,9 @@
 // const numbers = [1, 2, 3, 4, 5];
 // console.log("Type of numbers array:", typeof numbers);
 
-const numbers = [1, 2, 3, 4, 5];
-const colors = ["red", "blue", "green"];
-numbers.pop();
-colors.shift();
-console.log("After removal, Numbers Array:", numbers);
-console.log("After removal, Colors Array:", colors);
+// const numbers = [1, 2, 3, 4, 5];
+// const colors = ["red", "blue", "green"];
+// numbers.pop();
+// colors.shift();
+// console.log("After removal, Numbers Array:", numbers);
+// console.log("After removal, Colors Array:", colors);
